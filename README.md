@@ -1,4 +1,4 @@
-## rest-api for smarthome
+## Something like Jarvis for Mr. Stark
 
 Modules:
 - HTTP (to get informations from sensors and other devices)
