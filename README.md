@@ -15,3 +15,4 @@ Planned Modules:
 - Telegram (just for the fun)
 - Passwordmanager (to collect all passwords)
 - haveibeenpwned API (checks all emails and passwords in the passwordmanager)
+- Discord integration (to track my own (onlinetime something like that)
