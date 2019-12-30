@@ -1,4 +1,4 @@
-## Something like Jarvis for Mr. Stark
+## Something to make the digital-life easier
 
 Modules:
 - HTTP (to get informations from sensors and other devices)
