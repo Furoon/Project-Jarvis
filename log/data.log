@@ -2242,3 +2242,10 @@
 2020-12-25 16:30:28: ping: Modules was loaded
 2020-12-25 16:30:28: System: Modules was loaded
 2020-12-25 16:30:28: mongoose: connected to DB!
+2020-12-25 16:34:12: Discord: Modules was loaded
+2020-12-25 16:34:12: influx: module was loaded
+2020-12-25 16:34:12: Kalender: Modules was loaded
+2020-12-25 16:34:12: mqtt: Modules was loaded
+2020-12-25 16:34:12: ping: Modules was loaded
+2020-12-25 16:34:12: System: Modules was loaded
+2020-12-25 16:34:13: mongoose: connected to DB!

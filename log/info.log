@@ -3086,3 +3086,12 @@
 2020-12-25 16:30:28: System: Modules was loaded
 2020-12-25 16:30:28: Jarvis: Jarvis 0.5.3 is up and running on port 3000
 2020-12-25 16:30:28: mongoose: connected to DB!
+2020-12-25 16:34:12: Discord: Modules was loaded
+2020-12-25 16:34:12: influx: module was loaded
+2020-12-25 16:34:12: Kalender: Modules was loaded
+2020-12-25 16:34:12: mqtt: Modules was loaded
+2020-12-25 16:34:12: ping: Modules was loaded
+2020-12-25 16:34:12: System: Modules was loaded
+2020-12-25 16:34:12: Jarvis: Jarvis 0.5.3 is up and running on port 3000
+2020-12-25 16:34:13: mongoose: connected to DB!
+2020-12-25 16:34:14: Socket: YouTube Handler connected...
