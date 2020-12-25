@@ -1,0 +1,8 @@
+apidoc/
+node_modules/
+.env
+.dockerignore
+.eslintrc.json
+changelog
+TODO
+urls.txt

@@ -1,0 +1,54 @@
+2020-12-13 19:42:23: influx: Error: connect ECONNREFUSED 127.0.0.1:8086
+2020-12-13 19:42:47: influx: Error: connect ECONNREFUSED 127.0.0.1:8086
+2020-12-13 19:43:32: influx: Error: connect ECONNREFUSED 127.0.0.1:8086
+2020-12-13 19:43:37: influx: Error: connect ECONNREFUSED 127.0.0.1:8086
+2020-12-13 19:43:57: influx: Error: connect ECONNREFUSED 127.0.0.1:8086
+2020-12-13 19:44:00: influx: Error saving data to InfluxDB! Error: connect ECONNREFUSED 127.0.0.1:8086
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1133:16)
+2020-12-13 19:44:51: influx: Error: connect ECONNREFUSED 127.0.0.1:8086
+2020-12-13 19:45:20: influx: Error: connect ECONNREFUSED 127.0.0.1:8086
+2020-12-13 19:50:44: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 19:50:49: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 19:51:26: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 19:51:51: SensorRoute: ReferenceError: data is not defined
+2020-12-13 19:52:19: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 19:52:31: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 19:53:20: SensorRoute: ReferenceError: result is not defined
+2020-12-13 19:53:21: SensorRoute: ReferenceError: result is not defined
+2020-12-13 19:53:46: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 19:55:30: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 19:55:44: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 19:56:14: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 19:57:03: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 19:57:40: SensorRoute: TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received type number (200)
+2020-12-13 19:57:41: SensorRoute: TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received type number (200)
+2020-12-13 19:58:03: SensorRoute: TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received type number (200)
+2020-12-13 20:01:50: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 20:02:09: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 20:02:21: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 20:02:43: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 20:04:50: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 20:05:07: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 20:05:22: SensorRoute: ReferenceError: posts is not defined
+2020-12-13 20:09:53: SensorRoute: Error: A 400 Bad Request error occurred: {"error":"error parsing query: found undefined, expected integer at line 1, char 78"}
+
+2020-12-13 20:16:20: SensorRoute: Error: A 400 Bad Request error occurred: {"error":"error parsing query: found undefined, expected integer at line 1, char 78"}
+
+2020-12-13 20:16:29: SensorRoute: Error: A 400 Bad Request error occurred: {"error":"error parsing query: found undefined, expected integer at line 1, char 78"}
+
+2020-12-13 20:44:20: influx: Error: connect ECONNREFUSED 127.0.0.1:8086
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1133:16)
+2020-12-13 20:44:33: influx: Error: connect ECONNREFUSED 127.0.0.1:8086
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1133:16)
+2020-12-13 20:45:21: influx: Error: getaddrinfo ENOTFOUND undefined
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:67:26)
+2020-12-13 20:45:24: influx: Error: getaddrinfo ENOTFOUND undefined
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:67:26)
+2020-12-13 21:49:09: ping: RaspberryPi timed out
+2020-12-24 13:18:11: Socket: undefined
+2020-12-24 13:31:59: Socket: undefined
+2020-12-24 13:59:32: Socket: undefined
+2020-12-24 14:04:12: Socket: undefined
+2020-12-24 14:08:25: Socket: undefined
+2020-12-24 14:11:19: Socket: undefined
+2020-12-24 14:21:11: Socket: undefined
