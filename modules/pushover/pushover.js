@@ -1,4 +1,6 @@
 var Push = require("pushover-notifications");
+const log = require('../log/log')
+const env = require('../../config/environment')
 
 var jarvis = new Push({
   user: "gdfmp114zvggvqe2yzknncuopwb37m",
@@ -12,6 +14,9 @@ var fam = new Push({
 
 
 const sendCritical = function (title, message) {
+  let error = message;
+
+  if(!error) return ;
   var msg = {
     title: title,
     message: message,
@@ -21,7 +26,7 @@ const sendCritical = function (title, message) {
   };
   jarvis.send(msg, function (err, result) {
     if ((result.status = "1")) {
-      // log.debug("Nachricht wurde verschickt");
+      // log.debug(msg.title + ": "+ msg.message);
     } else {
       log.error(err);
     }
@@ -39,7 +44,7 @@ const sendNonCritial = function (title, message) {
   };
   jarvis.send(msg, function (err, result) {
     if ((result.status = "1")) {
-      // log.debug("Nachricht wurde verschickt");
+      // log.debug(msg.title + ": "+ msg.message);
     } else {
       log.error(err);
     }
@@ -47,7 +52,7 @@ const sendNonCritial = function (title, message) {
 };
 
 
-const sendMsg = function (group, title, message) {
+const sendMsgFamily = function (title, message) {
   var msg = {
     message: message,
     title: title,
@@ -55,8 +60,6 @@ const sendMsg = function (group, title, message) {
     priority: 0,
     timestamp: new Date(),
   };
-  switch (group) {
-    case "family":
       fam.send(msg, function (err, result) {
         if ((result.status = "1")) {
            log.debug("Nachricht an Family wurde verschickt");
@@ -64,19 +67,25 @@ const sendMsg = function (group, title, message) {
           log.error(err);
         }
       });
-      break;
+};
 
-    default:
+
+const sendMsg = function (title, message) {
+  var msg = {
+    message: message,
+    title: title,
+    sound: "classical",
+    priority: 0,
+    timestamp: new Date(),
+  };
        jarvis.send(msg, function (err, result) {
          if ((result.status = "1")) {
-            console.log("Nachricht an Jarvis wurde verschickt");
+            log.debug("Nachricht wurde verschickt");
          } else {
            log.error(err);
          }
        });
-       break;
-  }};
-
+  };
 
 const sendErr = function (title, message) {
   var msg = {
@@ -86,21 +95,26 @@ const sendErr = function (title, message) {
     priority: -1,
     timestamp: new Date(),
   };
-  jarvis.send(msg, function (err, result) {
-    if ((result.status = "1")) {
-      // log.debug("Nachricht wurde verschickt");
+  if (env.config.debug) {
+    return
     } else {
-      log.error(err);
+      jarvis.send(msg, function (err, result) {
+        if ((result.status = "1")) {
+           log.debug("Nachricht wurde verschickt");
+        } else {
+          log.error(err);
+        }
+      });
     }
-  });
+
 };
 
 
 
 module.exports = {
   sendMsg,
+  sendMsgFamily,
   sendCritical,
   sendNonCritial,
   sendErr
 };
-

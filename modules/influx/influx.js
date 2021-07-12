@@ -33,6 +33,7 @@ async function influxRoomsensorWrite(data) {
             pressure: data.pressure
         },
     },])
+    .then(log.data(`Neue Sensordaten für ${data.room} (temp:${data.temperature} hum:${data.humidity} press:${data.pressure} light:${data.lightlevel}) gespeichert.`))
     .catch((err) => {
         log.error(err.stack);
     });
@@ -61,6 +62,27 @@ async function createDB(newDB) {
 
 
 //TODO - Sensordaten finden und löschen
+
+
+const influx_system = new Influx.InfluxDB({
+    host: "192.168.178.73",
+    database: "systemInformation",
+    schema: [
+        {
+            measurement: "roomsensors",
+            fields: {
+                temperature: Influx.FieldType.FLOAT,
+                humidity: Influx.FieldType.FLOAT,
+                pressure: Influx.FieldType.INTEGER,
+                lightlevel: Influx.FieldType.INTEGER
+            },
+            tags: ["room"],
+        },
+    ],
+});
+
+
+
 
 
 

@@ -8,8 +8,8 @@ router.post("/winston", async (req, res) => {
 });
 
 router.get("/ping", async (req, res) => {
-  modules.ping.Ping();
-  modules.log.info("ping wird ausgeführt");
+  //modules.ping.Ping();
+  //modules.log.info("ping wird ausgeführt");
   res.sendStatus(200).end();
 });
 

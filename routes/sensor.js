@@ -38,12 +38,7 @@ router.post("/new/:room", async (req, res) => {
     res.status(200).send("New value was saved");
     modules.mqtt.sendMsg(
       `jarvis/modules/sensor/${req.params.room}/data`,
-      `{"room": "${req.params.room}","battery": "${req.body.battery}","sensortype": "${req.body.sensortype}","temperature": "${req.body.temperature}","humidity": "${req.body.humidity}", "pressure": "${req.body.pressure}","lightlevel": "${req.body.lightlevel}"}
-      `
-    );
-    log.data(
-      `Neue Sensordaten für ${req.params.room} (t:${req.body.temperature} h:${req.body.humidity} p:${req.body.pressure} l:${req.body.lightlevel}) von ${req.hostname} erhalten`
-    );
+      `{"room": "${req.params.room}","battery": "${req.body.battery}","sensortype": "${req.body.sensortype}","temperature": "${req.body.temperature}","humidity": "${req.body.humidity}", "pressure": "${req.body.pressure}","lightlevel": "${req.body.lightlevel}"}`);
   } catch (err) {
     log.error(err);
     res.status(400).send(err);

@@ -5,13 +5,26 @@ const log = require('../log/log')("mongoose")
 dotenv.config();
 
 //connect to DB
-mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true}, () =>
-  log.debug("connected to DB!")
-);
+mongoose.connect(process.env.DB_URI, {
+  useNewUrlParser: true,
+	useCreateIndex: true,
+	useFindAndModify: false,
+	useUnifiedTopology: true
+  });
 
-mongoose.connection.on("error", (err) => {
+const { connection: db } = mongoose;
+
+
+db.on('connected', () => {
+  log.debug('Database connected');
+});
+
+db.on('disconnected', () => {
+  log.debug('Database disconnected');
+});
+
+db.on('error', err => {
   log.error(err);
-  //process.exit();
 });
 
 module.exports;

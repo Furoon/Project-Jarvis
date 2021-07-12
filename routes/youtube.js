@@ -28,6 +28,18 @@ router.post("/unsubscribe", async (req, res) => {
   res.status(200).send("Channel unsubscribed");
 });
 
+/**
+ * @api {POST} /youtube/subscribe Subscribe 
+ * @apiName Channel subscriben
+ * @apiGroup Youtube
+ * @apiDescription Dient zum subscriben von Channels.
+ */
+router.post("/subscribe", async (req, res) => {
+  modules.socketio.youtubeHandlerEmit("channels");
+  log.info(`Neuer Channel ${req.body.channel} soll subscribed werden`)
+  res.status(200).send("Channel subscribed");
+});
+
 
 
 module.exports = router;

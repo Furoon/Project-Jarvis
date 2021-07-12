@@ -3,6 +3,7 @@ const User = require("../model/User");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const modules = require("../modules/index");
+const log = require("../modules/log/log");
 const { registerValidation } = require("../validation");
 const { loginValidation } = require("../validation");
 
@@ -40,7 +41,7 @@ router.post("/register", async (req, res) => {
   try {
     const savedUser = await user.save();
     res.sendStatus(201).send({ user: user.id });
-    modules.log.info("new user was created ${savedUser}");
+    log.info("new user was created ${savedUser}");
   } catch (err) {
     res.sendStatus(400).send(err);
   }

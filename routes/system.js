@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const modules = require("../modules/index");
+const log = require("../modules/log/log")
 
 /**
  * @api {POST} /system/:device Device betriebsbereit
@@ -13,7 +14,7 @@ router.post("/:deviceName", (req, res) => {
   //console.log(`${req.params.deviceName} ist hochgefahren!`);
   res.sendStatus(201).end();
   modules.pushover.sendNonCritial("Statusmitteilung", `Das Gerät ${req.params.deviceName} ist nun erreichbar`);
-  modules.log.info(`${req.params.deviceName} ist online`);
+  log.info(`${req.params.deviceName} ist online`);
 });
 
 /**
@@ -27,7 +28,7 @@ router.put("/:deviceName", (req, res) => {
   //console.log(`${req.params.deviceName} ist hochgefahren!`);
   res.sendStatus(201).end();
   modules.pushover.sendNonCritial("Statusmitteilung", `Das Gerät ${req.params.deviceName} hält Updates bereit`);
-  modules.log.info(`${req.params.deviceName} meldet neue Updates`);
+  log.info(`${req.params.deviceName} meldet neue Updates`);
 });
 
 
@@ -43,7 +44,7 @@ router.delete("/:deviceName", (req, res) => {
   //console.log(`${req.params.deviceName} ist heruntergefahren!`);
   res.sendStatus(201).end();
   modules.pushover.sendCritical("Statusmitteilung", `Das Gerät ${req.params.deviceName} schaltet sich aus`);
-  modules.log.info(`${req.params.deviceName} fährt herunter`);
+  log.info(`${req.params.deviceName} fährt herunter`);
 });
 
 
@@ -59,7 +60,7 @@ router.patch("/:deviceName", (req, res) => {
   //console.log(`${req.params.deviceName} ist hochgefahren!`);
   res.sendStatus(201).end();
   modules.pushover.sendNonCritial("Statusmitteilung", `Das Gerät ${req.params.deviceName} geht in den Deepsleep`);
-  modules.log.info(`${req.params.deviceName} meldet deepsleep`);
+  log.info(`${req.params.deviceName} meldet deepsleep`);
 });
 
 

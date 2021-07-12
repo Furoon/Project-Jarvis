@@ -2,7 +2,8 @@
 
 const winston = require("winston");
 const { combine, timestamp, printf } = winston.format;
-const pushover = require("../pushover/pushover");
+const pushover = require("../pushover/pushover.js");
+const env = require('../../config/environment')
 
 const myFormat = printf(({ level, message, timestamp}) => {
   return `${timestamp}: ${message}`;
@@ -58,19 +59,20 @@ const logger = winston.createLogger({
       level: "error",
     }),
     new winston.transports.File({
-      filename: "log/info.log",
-      level: "info",
+      filename: "log/debug.log",
+      level: "debug",
      }),
-    new winston.transports.File({
+   new winston.transports.File({
       filename: "log/data.log",
       level: "data",
      }),
     new winston.transports.File({
-     filename: "log/debug.log",
-     level: "debug",
-    }),
-  ],
+      filename: "log/info.log",
+      level: "info",
+     })
+],
 });
+
 
 module.exports = function(fileName) {    
   var myLogger = {
@@ -82,7 +84,9 @@ module.exports = function(fileName) {
         logger.info(fileName + ': ' + text)
       },
       debug: function(text) {
-        logger.debug(fileName + ': ' + text)
+        if (env.config.debug) {
+          logger.debug(fileName + ': ' + text)
+        }
       },
       warn: function(text) {
         logger.warn(fileName + ': ' + text)
@@ -91,6 +95,5 @@ module.exports = function(fileName) {
         logger.data(fileName + ': ' + text)
       }
   }
-
   return myLogger
 }

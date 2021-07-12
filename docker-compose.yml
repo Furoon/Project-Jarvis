@@ -9,14 +9,12 @@ services:
     image: "bitnami/mongodb:latest"
     volumes:
       - ./data/mongodb/:/data/db
-
     ports:
       - "27017-27019:27017-27019"
     environment:
       - MONGODB_USERNAME=jarvis
       - MONGODB_PASSWORD=jarvis123
       - MONGODB_DATABASE=jdb
-
     networks:
       - jarvis_api
 

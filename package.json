@@ -1,6 +1,6 @@
 {
   "name": "Jarvis",
-  "version": "0.5.3",
+  "version": "0.6.0",
   "description": "A little helper for the digital life",
   "main": "index.js",
   "scripts": {
@@ -16,26 +16,30 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^15.1.0",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
+    "googleapis": "^66.0.0",
     "influx": "^5.6.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.6.7",
     "mqtt": "^4.2.1",
+    "node-notifier": "^9.0.1",
     "ping": "^0.2.3",
     "pushover-notifications": "^1.2.2",
     "shortid": "^2.2.15",
     "socket.io": "^3.0.4",
     "valid-url": "^1.0.9",
-    "winston": "^3.2.1"
+    "volleyball": "^1.5.1",
+    "winston": "^3.2.1",
+    "youtube-dl": "^3.0.2"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^2.0.12"
   },
   "apidoc": {
-    "title": "Jarvis",
+    "title": "Jarvis v1",
     "url": "http://localhost:3000/api/v1"
   }
 }

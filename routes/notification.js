@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const modules = require("../modules/index");
-const log = require("../modules/log/log")
+const log = require("../modules/log/log");
+const socket = require("../modules/socket/socket");
 
 /**
  * @api {POST} /notification/ Nachricht versenden
@@ -19,18 +20,24 @@ const log = require("../modules/log/log")
  */
 
 router.post("/", async (req, res) => {
+  console.log(req);
+  console.log(req.body);
+  console.log(req.data);
   const group = req.body.group;
-  const handler = req.body.payloader;
   const title = req.body.title;
   const msg = req.body.msg;
   try {
-    switch (handler) {
+    switch (req.body.handler) {
       case "pushover":
         modules.pushover.sendMsg(group, title, msg);
         res.status(200).end();
         break;
       case "mqtt":
         modules.mqtt.sendMsg(topic, msg);
+        res.status(200).end();
+        break;
+      case "toast":
+        socket.toastHandlerEmit(title, msg);
         res.status(200).end();
         break;
     }
@@ -42,9 +49,35 @@ router.post("/", async (req, res) => {
 });
 
 
+router.post("/family", async (req, res) => {
+  const title = req.body.title;
+  const msg = req.body.msg;
+  try {
+    modules.pushover.sendMsgFamily(title, msg);
+  } catch (err) {
+    console.log(err)
+    res.status(400).send(err);
+  }
+});
+
+
+router.post("/test", async (req, res) => {
+  const title = req.body.title;
+  const msg = req.body.msg;
+  try {
+    console.log("testRoute")
+    socket.toastHandlerEmit(title, msg);
+    res.status(200).end();
+  } catch (err) {
+    console.log(err)
+    res.status(400).send(err);
+  }
+});
+
+
 router.post("/muell", async (req, res) => {
-  modules.pushover.sendMuell(req.body.msg);
-  modules.pushover.sendMsg("family", "Müllerrinerung", `Morgen wird ${req.body.msg} abgeholt!`);
+  console.log(req.body.common)
+  //modules.pushover.sendMsg("debug", "Müllerrinerung", `Morgen wird ${req.body.msg} abgeholt!`);
   res.status(200).end();
 });
 
