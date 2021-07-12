@@ -1,8 +1,8 @@
 const pingConfig = {
         servers: [
           {
-            ip: '192.168.178.27',
-            hostname: 'RaspberryPi',
+            ip: '192.168.178.116',
+            hostname: 'AltbauHomy',
             online: false,
             ping: null,
             packetLoss: null,
@@ -40,7 +40,9 @@ const pingConfig = {
             packetLoss: null,
             lastCheck: null
           },
-        ]
+        ],
+        timeout: "20",
+        intervall: "900000"
       };
 
 

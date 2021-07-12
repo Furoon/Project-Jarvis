@@ -5,7 +5,7 @@ const { combine, timestamp, printf } = winston.format;
 const pushover = require("../pushover/pushover.js");
 const env = require('../../config/environment')
 
-const myFormat = printf(({ level, message, timestamp}) => {
+const myFormat = printf(({ level, message, timestamp }) => {
   return `${timestamp}: ${message}`;
 });
 
@@ -61,39 +61,42 @@ const logger = winston.createLogger({
     new winston.transports.File({
       filename: "log/debug.log",
       level: "debug",
-     }),
-   new winston.transports.File({
+    }),
+    new winston.transports.File({
       filename: "log/data.log",
       level: "data",
-     }),
+    }),
     new winston.transports.File({
       filename: "log/info.log",
       level: "info",
-     })
-],
+    })
+  ],
 });
 
 
-module.exports = function(fileName) {    
+module.exports = function (fileName) {
   var myLogger = {
-      error: function(boop, text) {
+    error: function (boop, text) {
+      if (!env.config.debug) {
         logger.error(fileName + ': ' + text);
         pushover.sendErr(fileName, "Beep Beep, error Boop");
-      },
-      info: function(text) {
-        logger.info(fileName + ': ' + text)
-      },
-      debug: function(text) {
-        if (env.config.debug) {
-          logger.debug(fileName + ': ' + text)
-        }
-      },
-      warn: function(text) {
-        logger.warn(fileName + ': ' + text)
-      },
-      data: function(text) {
-        logger.data(fileName + ': ' + text)
       }
+
+    },
+    info: function (text) {
+      logger.info(fileName + ': ' + text)
+    },
+    debug: function (text) {
+      if (env.config.debug) {
+        logger.debug(fileName + ': ' + text)
+      }
+    },
+    warn: function (text) {
+      logger.warn(fileName + ': ' + text)
+    },
+    data: function (text) {
+      logger.data(fileName + ': ' + text)
+    }
   }
   return myLogger
 }

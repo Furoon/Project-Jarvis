@@ -3,7 +3,7 @@ var mqtt = require("mqtt");
 const log = require("../log/log")("mqtt");
 
 // INFO: Bereitstellen eines MQTT Clients
-const client =  mqtt.connect(process.env.MQTT_SERVER, {reconnectPeriod: 15000});
+const client = mqtt.connect(process.env.MQTT_SERVER, { reconnectPeriod: 15000 });
 
 
 client.on("connect", function () {
@@ -40,15 +40,17 @@ client.on("offline", function () {
 });
 
 
-
-
-
-
-
-// INFO: Bereitstellen einer publish function (z.B. publish(topic, msg))
+/**
+ * Send message to the topic
+ * @typedef {string} topic
+ * @typedef {string} message
+ */
+/**
+ * @param  {topic} topic - specify the MQTT Topic
+ * @param  {title} msg - specify the MQTT Payload
+ */
 async function sendMsg(topic, msg) {
   client.publish(topic.toString(), msg.toString());
-  // console.log(`${topic.toString()}     ${msg.toString()}`);
 }
 
 module.exports = { sendMsg };

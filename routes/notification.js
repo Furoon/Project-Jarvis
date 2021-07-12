@@ -7,29 +7,24 @@ const socket = require("../modules/socket/socket");
  * @api {POST} /notification/ Nachricht versenden
  * @apiName Pushover-Nachricht versenden
  * @apiGroup Notification
- * @apiParam {JSON} group legt die Addressaten in Pushover fest (fam, jarvis)
- * @apiParam {JSON} payloader Legt den Payloader fesz (pushover, mqtt)
+ * @apiParam {JSON} payloader Legt den Payloader fest (pushover, mqtt)
  * @apiParam {JSON} title Titel
  * @apiParam {JSON} msg Message
  * @apiParamExample {json} Request-Example:
  * { 
- *  "payloader": "payloader",
- *  "title": "Titel",
- *  "msg": "Message"
+ *  "payloader": "Pushover",
+ *  "title": "Hello Titel",
+ *  "msg": "Hello World"
  * }
  */
 
 router.post("/", async (req, res) => {
-  console.log(req);
-  console.log(req.body);
-  console.log(req.data);
-  const group = req.body.group;
   const title = req.body.title;
   const msg = req.body.msg;
   try {
     switch (req.body.handler) {
       case "pushover":
-        modules.pushover.sendMsg(group, title, msg);
+        modules.pushover.sendMsg(title, msg);
         res.status(200).end();
         break;
       case "mqtt":

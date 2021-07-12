@@ -13,12 +13,23 @@ var fam = new Push({
 });
 
 
+/**
+ * An critical informationpush with an high priotity
+ * @typedef {string} title
+ * @typedef {string} message
+ */
+/**
+ * Set title and message
+ * @param  {title} title - The title for the Push, leave blank for default value "Jarvis"
+ * @param  {message} message - The message for the Push
+ */
+
 const sendCritical = function (title, message) {
   let error = message;
 
-  if(!error) return ;
+  if (!error) return;
   var msg = {
-    title: title,
+    title: title || "Jarvis",
     message: message,
     sound: "tugboat",
     priority: 1,
@@ -33,13 +44,22 @@ const sendCritical = function (title, message) {
   });
 };
 
-
+/**
+ * An noncritical informationpush
+ * @typedef {string} title
+ * @typedef {string} message
+ */
+/**
+ * Set title and message
+ * @param  {title} title - The title for the Push, leave blank for default value "Jarvis"
+ * @param  {message} message - The message for the Push
+ */
 const sendNonCritial = function (title, message) {
   var msg = {
-    title: title,
+    title: title || "Jarvis",
     message: message,
     sound: "classical",
-    priority: -1,
+    priority: 0,
     timestamp: new Date(),
   };
   jarvis.send(msg, function (err, result) {
@@ -55,41 +75,60 @@ const sendNonCritial = function (title, message) {
 const sendMsgFamily = function (title, message) {
   var msg = {
     message: message,
-    title: title,
+    title: title || "Jarvis",
     sound: "classical",
     priority: 0,
     timestamp: new Date(),
   };
-      fam.send(msg, function (err, result) {
-        if ((result.status = "1")) {
-           log.debug("Nachricht an Family wurde verschickt");
-        } else {
-          log.error(err);
-        }
-      });
+  fam.send(msg, function (err, result) {
+    if ((result.status = "1")) {
+      log.debug("Nachricht an Family wurde verschickt");
+    } else {
+      log.error(err);
+    }
+  });
 };
 
-
+/**
+ * A number, or a string containing a number.
+ * @typedef {string} title
+ * @typedef {string} message
+ */
+/**
+ * Set title and message
+ * @param  {title} title - The title for the Push, leave blank for default value "Jarvis"
+ * @param  {message} message - The message for the Push
+ */
 const sendMsg = function (title, message) {
   var msg = {
     message: message,
-    title: title,
+    title: title || "Jarvis",
     sound: "classical",
     priority: 0,
     timestamp: new Date(),
   };
-       jarvis.send(msg, function (err, result) {
-         if ((result.status = "1")) {
-            log.debug("Nachricht wurde verschickt");
-         } else {
-           log.error(err);
-         }
-       });
-  };
+  jarvis.send(msg, function (err, result) {
+    if ((result.status = "1")) {
+      log.debug("Nachricht wurde verschickt");
+    } else {
+      log.error(err);
+    }
+  });
+};
 
+/**
+ * An errorpush with an high priority
+ * @typedef {string} title
+ * @typedef {string} message
+ */
+/**
+ * Set title and message
+ * @param  {title} title - The title for the Push, leave blank for default value "Jarvis"
+ * @param  {message} message - The message for the Push
+ */
 const sendErr = function (title, message) {
   var msg = {
-    title: title,
+    title: title || "Jarvis",
     message: message,
     sound: "alarm",
     priority: -1,
@@ -97,15 +136,15 @@ const sendErr = function (title, message) {
   };
   if (env.config.debug) {
     return
-    } else {
-      jarvis.send(msg, function (err, result) {
-        if ((result.status = "1")) {
-           log.debug("Nachricht wurde verschickt");
-        } else {
-          log.error(err);
-        }
-      });
-    }
+  } else {
+    jarvis.send(msg, function (err, result) {
+      if ((result.status = "1")) {
+        log.debug("Nachricht wurde verschickt");
+      } else {
+        log.error(err);
+      }
+    });
+  }
 
 };
 

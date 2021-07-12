@@ -4,6 +4,8 @@ const log = require('../log/log')("mongoose")
 
 dotenv.config();
 
+
+
 //connect to DB
 mongoose.connect(process.env.DB_URI, {
   useNewUrlParser: true,

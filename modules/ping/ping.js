@@ -5,13 +5,10 @@ const log = require('../log/log')("ping")
 const pingConfig = require('../../config/ping')
 var ping = require("ping");
 
-const host = pingConfig.servers;
-
-
 
 async function checkOnline() {
-  hostlist.servers.forEach(async (host) => {
-    let res = await ping.promise.probe(host.ip,{timeout: 20});
+    pingConfig.servers.forEach(async (host) => {
+    let res = await ping.promise.probe(host.ip,{timeout: pingConfig.timeout});
     if (res.alive == false) {
         host.lastCheck = Date.now()
         lastState(host)
@@ -32,10 +29,10 @@ async function checkOnline() {
 
 async function lastState(host) {
     console.log(host.online);
-    if (host.online === false) {
-        let res = await ping.promise.probe(host.ip,{timeout: 10});
-        if (res.alive === false) {
-            pushover.sendCritical("Statusmitteilung", `Das Gerät ${host.hostname} ist nicht erreichbar!`);
+    if (!host.online) {
+        let res = await ping.promise.probe(host.ip,{timeout: pingConfig.timeout});
+        if (!res.alive) {
+           pushover.sendCritical("Statusmitteilung", `Das Gerät ${host.hostname} ist nicht erreichbar!`);
             
         }
     }
@@ -49,8 +46,6 @@ async function mqttPublish(host) {
 
 
 
-setInterval(checkOnline, 900000); // 900000ms = 15 min
-
-
+setInterval(checkOnline, pingConfig.intervall); // 900000ms = 15 min
 
 log.debug("Modules was loaded")
