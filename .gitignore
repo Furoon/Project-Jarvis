@@ -1,4 +1,6 @@
 apidoc/
+config/
+data/
 log/
 node_modules/
 .env
@@ -7,3 +9,4 @@ node_modules/
 changelog
 TODO
 urls.txt
+docker-compose.yml

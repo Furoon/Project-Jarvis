@@ -1,15 +1,17 @@
 var Push = require("pushover-notifications");
 const log = require('../log/log')
 const env = require('../../config/environment')
+const config = require('../../config/pushover')
+
 
 var jarvis = new Push({
-  user: "gdfmp114zvggvqe2yzknncuopwb37m",
-  token: "acpxi4aw91c4fc91rxibezu1bzj6se",
+  user: config.Push.user,
+  token: config.Push.token,
 });
 
 var fam = new Push({
-  user: "gexk4wbqu7wtzmwh9f9ukggmjf5j94",
-  token: "acpxi4aw91c4fc91rxibezu1bzj6se",
+  user: config.Push.user_fam,
+  token: config.Push.token,
 });
 
 
