@@ -18,3 +18,4 @@
 2021-07-12 14:30:33: ping: undefined
 2021-07-12 14:30:33: ping: undefined
 2021-07-12 14:30:33: ping: undefined
+2021-07-13 17:55:06: Sensor: {"room":"testroom123","sensortype":"room_climate","battery":null,"temperature":"1","humidity":"1","pressure":null,"lightlevel":null}

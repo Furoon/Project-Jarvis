@@ -76,25 +76,29 @@ const logger = winston.createLogger({
 
 module.exports = function (fileName) {
   var myLogger = {
-    error: function (boop, text) {
-      if (!env.config.debug) {
-        logger.error(fileName + ': ' + text);
-        pushover.sendErr(fileName, "Beep Beep, error Boop");
-      }
-
+    error: function (errMsg) {
+      let text = JSON.stringify(errMsg);
+      logger.error(fileName + ': ' + text);
+      pushover.sendErr(fileName, "Beep Beep, error Boop");
     },
-    info: function (text) {
+    info: function (log) {
+      let text = JSON.stringify(log);
       logger.info(fileName + ': ' + text)
     },
-    debug: function (text) {
+    debug: function (log) {
       if (env.config.debug) {
+        let text = JSON.stringify(log);
         logger.debug(fileName + ': ' + text)
+      } else {
+        return
       }
     },
-    warn: function (text) {
+    warn: function (log) {
+      let text = JSON.stringify(log);
       logger.warn(fileName + ': ' + text)
     },
-    data: function (text) {
+    data: function (log) {
+      let text = JSON.stringify(log);
       logger.data(fileName + ': ' + text)
     }
   }

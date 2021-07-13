@@ -27,7 +27,6 @@ const log = require('../modules/log/log')("Sensor")
 
 
 router.post("/new", async (req, res) => {
-  console.log(req.body)
   const sensor = {
     room: req.body.room,
     sensortype: req.body.sensortype || null,

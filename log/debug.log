@@ -572,3 +572,26 @@
 2021-07-13 17:35:49: System: Modules was loaded
 2021-07-13 17:35:49: mqtt: Die Verbindung wurde hergestellt.
 2021-07-13 17:35:50: mongoose: Database connected
+2021-07-13 17:53:48: influx: "module was loaded"
+2021-07-13 17:53:48: Kalender: "Modules was loaded"
+2021-07-13 17:53:49: mqtt: "Modules was loaded"
+2021-07-13 17:53:49: ping: "Modules was loaded"
+2021-07-13 17:53:50: System: "Modules was loaded"
+2021-07-13 17:53:50: mqtt: "Die Verbindung wurde hergestellt."
+2021-07-13 17:53:50: mongoose: "Database connected"
+2021-07-13 17:54:22: influx: "module was loaded"
+2021-07-13 17:54:22: Kalender: "Modules was loaded"
+2021-07-13 17:54:23: mqtt: "Modules was loaded"
+2021-07-13 17:54:23: ping: "Modules was loaded"
+2021-07-13 17:54:24: System: "Modules was loaded"
+2021-07-13 17:54:24: mqtt: "Die Verbindung wurde hergestellt."
+2021-07-13 17:54:24: mongoose: "Database connected"
+2021-07-13 17:54:28: Sensor: {"room":"testroom123","sensortype":"room_climate","temperature":"1","humidity":"1"}
+2021-07-13 17:55:03: influx: "module was loaded"
+2021-07-13 17:55:03: Kalender: "Modules was loaded"
+2021-07-13 17:55:03: mqtt: "Modules was loaded"
+2021-07-13 17:55:03: ping: "Modules was loaded"
+2021-07-13 17:55:05: System: "Modules was loaded"
+2021-07-13 17:55:05: mqtt: "Die Verbindung wurde hergestellt."
+2021-07-13 17:55:05: mongoose: "Database connected"
+2021-07-13 17:55:06: Sensor: {"room":"testroom123","sensortype":"room_climate","battery":null,"temperature":"1","humidity":"1","pressure":null,"lightlevel":null}

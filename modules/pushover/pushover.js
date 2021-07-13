@@ -1,5 +1,5 @@
-var Push = require("pushover-notifications");
-const log = require('../log/log')
+const Push = require("pushover-notifications");
+const log = require("../log/log");
 const env = require('../../config/environment')
 const config = require('../../config/pushover')
 
@@ -37,13 +37,7 @@ const sendCritical = function (title, message) {
     priority: 1,
     timestamp: new Date(),
   };
-  jarvis.send(msg, function (err, result) {
-    if ((result.status = "1")) {
-      // log.debug(msg.title + ": "+ msg.message);
-    } else {
-      log.error(err);
-    }
-  });
+  jarvis.send(msg);
 };
 
 /**
@@ -64,13 +58,7 @@ const sendNonCritial = function (title, message) {
     priority: 0,
     timestamp: new Date(),
   };
-  jarvis.send(msg, function (err, result) {
-    if ((result.status = "1")) {
-      // log.debug(msg.title + ": "+ msg.message);
-    } else {
-      log.error(err);
-    }
-  });
+  jarvis.send(msg);
 };
 
 
@@ -82,13 +70,7 @@ const sendMsgFamily = function (title, message) {
     priority: 0,
     timestamp: new Date(),
   };
-  fam.send(msg, function (err, result) {
-    if ((result.status = "1")) {
-      log.debug("Nachricht an Family wurde verschickt");
-    } else {
-      log.error(err);
-    }
-  });
+  fam.send(msg);
 };
 
 /**
@@ -109,13 +91,7 @@ const sendMsg = function (title, message) {
     priority: 0,
     timestamp: new Date(),
   };
-  jarvis.send(msg, function (err, result) {
-    if ((result.status = "1")) {
-      log.debug("Nachricht wurde verschickt");
-    } else {
-      log.error(err);
-    }
-  });
+  jarvis.send(msg);
 };
 
 /**
@@ -139,13 +115,7 @@ const sendErr = function (title, message) {
   if (env.config.debug) {
     return
   } else {
-    jarvis.send(msg, function (err, result) {
-      if ((result.status = "1")) {
-        log.debug("Nachricht wurde verschickt");
-      } else {
-        log.error(err);
-      }
-    });
+    jarvis.send(msg);
   }
 
 };

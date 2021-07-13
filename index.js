@@ -17,8 +17,6 @@ const youtubeRoute = require("./routes/youtube");
 const notificationRoute = require("./routes/notification");
 const testRoute = require("./routes/test");
 
-
-// const port = process.env.PORT || 3000;
 const port = env.config.port;
 const version = env.config.version;
 let name = `Jarvis v.${env.config.version}`;
@@ -54,5 +52,4 @@ app.listen(port, () => {
 if (!env.config.debug) {
   modules.pushover.sendNonCritial("Statusmitteilung", `${name} ist online`);
 }
-  
-  
+
