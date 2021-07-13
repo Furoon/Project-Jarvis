@@ -269,3 +269,472 @@
 2021-07-13 02:12:03: System: Modules was loaded
 2021-07-13 02:12:03: mqtt: Die Verbindung wurde hergestellt.
 2021-07-13 02:12:04: mongoose: Database connected
+2021-07-13 15:11:05: influx: module was loaded
+2021-07-13 15:11:05: Kalender: Modules was loaded
+2021-07-13 15:11:06: mqtt: Modules was loaded
+2021-07-13 15:11:06: ping: Modules was loaded
+2021-07-13 15:11:10: System: Modules was loaded
+2021-07-13 15:11:10: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 15:11:10: mongoose: Database connected
+2021-07-13 15:11:42: influx: module was loaded
+2021-07-13 15:11:43: Kalender: Modules was loaded
+2021-07-13 15:11:43: mqtt: Modules was loaded
+2021-07-13 15:11:43: ping: Modules was loaded
+2021-07-13 15:11:44: System: Modules was loaded
+2021-07-13 15:11:44: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:44: ping: DockerHost ist online
+2021-07-13 15:11:44: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:44: ping: FreeNas ist online
+2021-07-13 15:11:44: ping: Hostname: AltbauHomy, Online: true, Ping: 1.000, PacketLoss: 0.000
+2021-07-13 15:11:44: ping: AltbauHomy ist online
+2021-07-13 15:11:44: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 15:11:44: ping: Hostname: OctoEnder, Online: true, Ping: 13.000, PacketLoss: 0.000
+2021-07-13 15:11:44: ping: OctoEnder ist online
+2021-07-13 15:11:44: ping: Hostname: Homy, Online: true, Ping: 80.000, PacketLoss: 0.000
+2021-07-13 15:11:44: ping: Homy ist online
+2021-07-13 15:11:45: mongoose: Database connected
+2021-07-13 15:11:45: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:45: ping: AltbauHomy ist online
+2021-07-13 15:11:45: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:45: ping: FreeNas ist online
+2021-07-13 15:11:45: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:45: ping: DockerHost ist online
+2021-07-13 15:11:45: ping: Hostname: Homy, Online: true, Ping: 3.000, PacketLoss: 0.000
+2021-07-13 15:11:45: ping: Homy ist online
+2021-07-13 15:11:45: ping: Hostname: OctoEnder, Online: true, Ping: 5.000, PacketLoss: 0.000
+2021-07-13 15:11:45: ping: OctoEnder ist online
+2021-07-13 15:11:46: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:46: ping: FreeNas ist online
+2021-07-13 15:11:46: ping: Hostname: AltbauHomy, Online: true, Ping: 1.000, PacketLoss: 0.000
+2021-07-13 15:11:46: ping: AltbauHomy ist online
+2021-07-13 15:11:46: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:46: ping: DockerHost ist online
+2021-07-13 15:11:46: ping: Hostname: Homy, Online: true, Ping: 4.000, PacketLoss: 0.000
+2021-07-13 15:11:46: ping: Homy ist online
+2021-07-13 15:11:46: ping: Hostname: OctoEnder, Online: true, Ping: 5.000, PacketLoss: 0.000
+2021-07-13 15:11:46: ping: OctoEnder ist online
+2021-07-13 15:11:47: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:47: ping: AltbauHomy ist online
+2021-07-13 15:11:47: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:47: ping: FreeNas ist online
+2021-07-13 15:11:47: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:47: ping: DockerHost ist online
+2021-07-13 15:11:47: ping: Hostname: Homy, Online: true, Ping: 3.000, PacketLoss: 0.000
+2021-07-13 15:11:47: ping: Homy ist online
+2021-07-13 15:11:47: ping: Hostname: OctoEnder, Online: true, Ping: 5.000, PacketLoss: 0.000
+2021-07-13 15:11:47: ping: OctoEnder ist online
+2021-07-13 15:11:48: ping: Hostname: FreeNas, Online: true, Ping: 1.000, PacketLoss: 0.000
+2021-07-13 15:11:48: ping: FreeNas ist online
+2021-07-13 15:11:48: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:48: ping: AltbauHomy ist online
+2021-07-13 15:11:48: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:48: ping: DockerHost ist online
+2021-07-13 15:11:48: ping: Hostname: Homy, Online: true, Ping: 4.000, PacketLoss: 0.000
+2021-07-13 15:11:48: ping: Homy ist online
+2021-07-13 15:11:48: ping: Hostname: OctoEnder, Online: true, Ping: 2.000, PacketLoss: 0.000
+2021-07-13 15:11:48: ping: OctoEnder ist online
+2021-07-13 15:11:49: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:49: ping: FreeNas ist online
+2021-07-13 15:11:49: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:49: ping: AltbauHomy ist online
+2021-07-13 15:11:49: ping: Hostname: DockerHost, Online: true, Ping: 2.000, PacketLoss: 0.000
+2021-07-13 15:11:49: ping: DockerHost ist online
+2021-07-13 15:11:49: ping: Hostname: Homy, Online: true, Ping: 4.000, PacketLoss: 0.000
+2021-07-13 15:11:49: ping: Homy ist online
+2021-07-13 15:11:49: ping: Hostname: OctoEnder, Online: true, Ping: 5.000, PacketLoss: 0.000
+2021-07-13 15:11:49: ping: OctoEnder ist online
+2021-07-13 15:11:50: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:50: ping: FreeNas ist online
+2021-07-13 15:11:50: ping: Hostname: AltbauHomy, Online: true, Ping: 1.000, PacketLoss: 0.000
+2021-07-13 15:11:50: ping: AltbauHomy ist online
+2021-07-13 15:11:50: ping: Hostname: DockerHost, Online: true, Ping: 3.000, PacketLoss: 0.000
+2021-07-13 15:11:50: ping: DockerHost ist online
+2021-07-13 15:11:50: ping: Hostname: Homy, Online: true, Ping: 5.000, PacketLoss: 0.000
+2021-07-13 15:11:50: ping: Homy ist online
+2021-07-13 15:11:50: ping: Hostname: OctoEnder, Online: true, Ping: 5.000, PacketLoss: 0.000
+2021-07-13 15:11:50: ping: OctoEnder ist online
+2021-07-13 15:11:51: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:51: ping: FreeNas ist online
+2021-07-13 15:11:51: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:51: ping: AltbauHomy ist online
+2021-07-13 15:11:51: ping: Hostname: DockerHost, Online: true, Ping: 1.000, PacketLoss: 0.000
+2021-07-13 15:11:51: ping: DockerHost ist online
+2021-07-13 15:11:51: ping: Hostname: Homy, Online: true, Ping: 8.000, PacketLoss: 0.000
+2021-07-13 15:11:51: ping: Homy ist online
+2021-07-13 15:11:51: ping: Hostname: OctoEnder, Online: true, Ping: 5.000, PacketLoss: 0.000
+2021-07-13 15:11:51: ping: OctoEnder ist online
+2021-07-13 15:11:52: ping: Hostname: FreeNas, Online: true, Ping: 1.000, PacketLoss: 0.000
+2021-07-13 15:11:52: ping: FreeNas ist online
+2021-07-13 15:11:52: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:52: ping: AltbauHomy ist online
+2021-07-13 15:11:52: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:52: ping: DockerHost ist online
+2021-07-13 15:11:52: ping: Hostname: Homy, Online: true, Ping: 3.000, PacketLoss: 0.000
+2021-07-13 15:11:52: ping: Homy ist online
+2021-07-13 15:11:52: ping: Hostname: OctoEnder, Online: true, Ping: 13.000, PacketLoss: 0.000
+2021-07-13 15:11:52: ping: OctoEnder ist online
+2021-07-13 15:11:53: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:53: ping: FreeNas ist online
+2021-07-13 15:11:53: ping: Hostname: AltbauHomy, Online: true, Ping: 2.000, PacketLoss: 0.000
+2021-07-13 15:11:53: ping: AltbauHomy ist online
+2021-07-13 15:11:53: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:53: ping: DockerHost ist online
+2021-07-13 15:11:53: ping: Hostname: Homy, Online: true, Ping: 4.000, PacketLoss: 0.000
+2021-07-13 15:11:53: ping: Homy ist online
+2021-07-13 15:11:53: ping: Hostname: OctoEnder, Online: true, Ping: 3.000, PacketLoss: 0.000
+2021-07-13 15:11:53: ping: OctoEnder ist online
+2021-07-13 15:11:54: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:54: ping: AltbauHomy ist online
+2021-07-13 15:11:54: ping: Hostname: FreeNas, Online: true, Ping: 2.000, PacketLoss: 0.000
+2021-07-13 15:11:54: ping: FreeNas ist online
+2021-07-13 15:11:54: ping: Hostname: DockerHost, Online: true, Ping: 1.000, PacketLoss: 0.000
+2021-07-13 15:11:54: ping: DockerHost ist online
+2021-07-13 15:11:54: ping: Hostname: Homy, Online: true, Ping: 4.000, PacketLoss: 0.000
+2021-07-13 15:11:54: ping: Homy ist online
+2021-07-13 15:11:54: ping: Hostname: OctoEnder, Online: true, Ping: 11.000, PacketLoss: 0.000
+2021-07-13 15:11:54: ping: OctoEnder ist online
+2021-07-13 15:11:55: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:55: ping: FreeNas ist online
+2021-07-13 15:11:55: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:55: ping: AltbauHomy ist online
+2021-07-13 15:11:55: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:55: ping: DockerHost ist online
+2021-07-13 15:11:55: ping: Hostname: Homy, Online: true, Ping: 5.000, PacketLoss: 0.000
+2021-07-13 15:11:55: ping: Homy ist online
+2021-07-13 15:11:55: ping: Hostname: OctoEnder, Online: true, Ping: 2.000, PacketLoss: 0.000
+2021-07-13 15:11:55: ping: OctoEnder ist online
+2021-07-13 15:11:56: ping: Hostname: FreeNas, Online: true, Ping: 2.000, PacketLoss: 0.000
+2021-07-13 15:11:56: ping: FreeNas ist online
+2021-07-13 15:11:56: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:56: ping: AltbauHomy ist online
+2021-07-13 15:11:56: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:56: ping: DockerHost ist online
+2021-07-13 15:11:56: ping: Hostname: Homy, Online: true, Ping: 4.000, PacketLoss: 0.000
+2021-07-13 15:11:56: ping: Homy ist online
+2021-07-13 15:11:56: ping: Hostname: OctoEnder, Online: true, Ping: 8.000, PacketLoss: 0.000
+2021-07-13 15:11:56: ping: OctoEnder ist online
+2021-07-13 15:11:57: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:57: ping: FreeNas ist online
+2021-07-13 15:11:57: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:57: ping: AltbauHomy ist online
+2021-07-13 15:11:57: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:57: ping: DockerHost ist online
+2021-07-13 15:11:57: ping: Hostname: Homy, Online: true, Ping: 4.000, PacketLoss: 0.000
+2021-07-13 15:11:57: ping: Homy ist online
+2021-07-13 15:11:57: ping: Hostname: OctoEnder, Online: true, Ping: 4.000, PacketLoss: 0.000
+2021-07-13 15:11:57: ping: OctoEnder ist online
+2021-07-13 15:11:58: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:58: ping: FreeNas ist online
+2021-07-13 15:11:58: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:58: ping: AltbauHomy ist online
+2021-07-13 15:11:58: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:58: ping: DockerHost ist online
+2021-07-13 15:11:58: ping: Hostname: Homy, Online: true, Ping: 5.000, PacketLoss: 0.000
+2021-07-13 15:11:58: ping: Homy ist online
+2021-07-13 15:11:58: ping: Hostname: OctoEnder, Online: true, Ping: 9.000, PacketLoss: 0.000
+2021-07-13 15:11:58: ping: OctoEnder ist online
+2021-07-13 15:11:59: ping: Hostname: FreeNas, Online: true, Ping: 1.000, PacketLoss: 0.000
+2021-07-13 15:11:59: ping: FreeNas ist online
+2021-07-13 15:11:59: ping: Hostname: AltbauHomy, Online: true, Ping: 1.000, PacketLoss: 0.000
+2021-07-13 15:11:59: ping: AltbauHomy ist online
+2021-07-13 15:11:59: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:11:59: ping: DockerHost ist online
+2021-07-13 15:11:59: ping: Hostname: Homy, Online: true, Ping: 8.000, PacketLoss: 0.000
+2021-07-13 15:11:59: ping: Homy ist online
+2021-07-13 15:11:59: ping: Hostname: OctoEnder, Online: true, Ping: 5.000, PacketLoss: 0.000
+2021-07-13 15:11:59: ping: OctoEnder ist online
+2021-07-13 15:12:00: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:12:00: ping: AltbauHomy ist online
+2021-07-13 15:12:00: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:12:00: ping: FreeNas ist online
+2021-07-13 15:12:00: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:12:00: ping: DockerHost ist online
+2021-07-13 15:12:00: ping: Hostname: Homy, Online: true, Ping: 7.000, PacketLoss: 0.000
+2021-07-13 15:12:00: ping: Homy ist online
+2021-07-13 15:12:00: ping: Hostname: OctoEnder, Online: true, Ping: 8.000, PacketLoss: 0.000
+2021-07-13 15:12:00: ping: OctoEnder ist online
+2021-07-13 15:12:01: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:12:01: ping: AltbauHomy ist online
+2021-07-13 15:12:01: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:12:01: ping: FreeNas ist online
+2021-07-13 15:12:01: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:12:02: ping: DockerHost ist online
+2021-07-13 15:12:02: ping: Hostname: Homy, Online: true, Ping: 4.000, PacketLoss: 0.000
+2021-07-13 15:12:02: ping: Homy ist online
+2021-07-13 15:12:02: ping: Hostname: OctoEnder, Online: true, Ping: 5.000, PacketLoss: 0.000
+2021-07-13 15:12:02: ping: OctoEnder ist online
+2021-07-13 15:12:03: ping: Hostname: FreeNas, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:12:03: ping: FreeNas ist online
+2021-07-13 15:12:03: ping: Hostname: AltbauHomy, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:12:03: ping: AltbauHomy ist online
+2021-07-13 15:12:03: ping: Hostname: DockerHost, Online: true, Ping: 0.000, PacketLoss: 0.000
+2021-07-13 15:12:03: ping: DockerHost ist online
+2021-07-13 15:12:03: ping: Hostname: Homy, Online: true, Ping: 5.000, PacketLoss: 0.000
+2021-07-13 15:12:03: ping: Homy ist online
+2021-07-13 15:12:03: ping: Hostname: OctoEnder, Online: true, Ping: 7.000, PacketLoss: 0.000
+2021-07-13 15:12:03: ping: OctoEnder ist online
+2021-07-13 17:00:11: influx: module was loaded
+2021-07-13 17:00:11: Kalender: Modules was loaded
+2021-07-13 17:00:12: mqtt: Modules was loaded
+2021-07-13 17:00:12: ping: Modules was loaded
+2021-07-13 17:00:14: System: Modules was loaded
+2021-07-13 17:00:14: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:00:14: mongoose: Database connected
+2021-07-13 17:02:21: influx: module was loaded
+2021-07-13 17:02:21: Kalender: Modules was loaded
+2021-07-13 17:02:21: mqtt: Modules was loaded
+2021-07-13 17:02:21: ping: Modules was loaded
+2021-07-13 17:02:22: System: Modules was loaded
+2021-07-13 17:02:23: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:02:23: mongoose: Database connected
+2021-07-13 17:02:27: influx: module was loaded
+2021-07-13 17:02:27: Kalender: Modules was loaded
+2021-07-13 17:02:27: mqtt: Modules was loaded
+2021-07-13 17:02:27: ping: Modules was loaded
+2021-07-13 17:02:28: System: Modules was loaded
+2021-07-13 17:02:28: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:02:29: mongoose: Database connected
+2021-07-13 17:03:06: influx: module was loaded
+2021-07-13 17:03:06: Kalender: Modules was loaded
+2021-07-13 17:03:06: mqtt: Modules was loaded
+2021-07-13 17:03:06: ping: Modules was loaded
+2021-07-13 17:03:08: System: Modules was loaded
+2021-07-13 17:03:08: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:03:08: mongoose: Database connected
+2021-07-13 17:03:09: Sensor: [object Object]
+2021-07-13 17:03:28: influx: module was loaded
+2021-07-13 17:03:28: Kalender: Modules was loaded
+2021-07-13 17:03:29: mqtt: Modules was loaded
+2021-07-13 17:03:29: ping: Modules was loaded
+2021-07-13 17:03:30: System: Modules was loaded
+2021-07-13 17:03:30: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:03:30: mongoose: Database connected
+2021-07-13 17:03:55: influx: module was loaded
+2021-07-13 17:03:55: Kalender: Modules was loaded
+2021-07-13 17:03:55: mqtt: Modules was loaded
+2021-07-13 17:03:55: ping: Modules was loaded
+2021-07-13 17:03:56: System: Modules was loaded
+2021-07-13 17:03:57: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:03:57: mongoose: Database connected
+2021-07-13 17:04:48: influx: module was loaded
+2021-07-13 17:04:48: Kalender: Modules was loaded
+2021-07-13 17:04:49: mqtt: Modules was loaded
+2021-07-13 17:04:49: ping: Modules was loaded
+2021-07-13 17:04:50: System: Modules was loaded
+2021-07-13 17:04:50: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:04:51: mongoose: Database connected
+2021-07-13 17:06:41: influx: module was loaded
+2021-07-13 17:06:41: Kalender: Modules was loaded
+2021-07-13 17:06:42: mqtt: Modules was loaded
+2021-07-13 17:06:42: ping: Modules was loaded
+2021-07-13 17:06:43: System: Modules was loaded
+2021-07-13 17:06:43: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:06:43: mongoose: Database connected
+2021-07-13 17:08:47: influx: module was loaded
+2021-07-13 17:08:47: Kalender: Modules was loaded
+2021-07-13 17:08:48: mqtt: Modules was loaded
+2021-07-13 17:08:48: ping: Modules was loaded
+2021-07-13 17:08:49: System: Modules was loaded
+2021-07-13 17:08:49: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:08:50: mongoose: Database connected
+2021-07-13 17:08:51: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:10:27: influx: module was loaded
+2021-07-13 17:10:27: Kalender: Modules was loaded
+2021-07-13 17:10:28: mqtt: Modules was loaded
+2021-07-13 17:10:28: ping: Modules was loaded
+2021-07-13 17:10:29: System: Modules was loaded
+2021-07-13 17:10:29: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:10:29: mongoose: Database connected
+2021-07-13 17:10:31: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:11:10: influx: module was loaded
+2021-07-13 17:11:10: Kalender: Modules was loaded
+2021-07-13 17:11:11: mqtt: Modules was loaded
+2021-07-13 17:11:11: ping: Modules was loaded
+2021-07-13 17:11:12: System: Modules was loaded
+2021-07-13 17:11:12: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:11:12: mongoose: Database connected
+2021-07-13 17:11:14: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:12:36: influx: module was loaded
+2021-07-13 17:12:36: Kalender: Modules was loaded
+2021-07-13 17:12:37: mqtt: Modules was loaded
+2021-07-13 17:12:37: ping: Modules was loaded
+2021-07-13 17:12:38: System: Modules was loaded
+2021-07-13 17:12:38: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:12:38: mongoose: Database connected
+2021-07-13 17:13:20: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:14:06: influx: module was loaded
+2021-07-13 17:14:06: Kalender: Modules was loaded
+2021-07-13 17:14:06: mqtt: Modules was loaded
+2021-07-13 17:14:06: ping: Modules was loaded
+2021-07-13 17:14:07: System: Modules was loaded
+2021-07-13 17:14:07: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:14:08: mongoose: Database connected
+2021-07-13 17:14:09: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:14:12: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:14:26: influx: module was loaded
+2021-07-13 17:14:26: Kalender: Modules was loaded
+2021-07-13 17:14:27: mqtt: Modules was loaded
+2021-07-13 17:14:27: ping: Modules was loaded
+2021-07-13 17:14:28: System: Modules was loaded
+2021-07-13 17:14:28: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:14:28: mongoose: Database connected
+2021-07-13 17:14:30: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:14:51: influx: module was loaded
+2021-07-13 17:14:51: Kalender: Modules was loaded
+2021-07-13 17:14:52: mqtt: Modules was loaded
+2021-07-13 17:14:52: ping: Modules was loaded
+2021-07-13 17:14:53: System: Modules was loaded
+2021-07-13 17:14:53: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:14:53: mongoose: Database connected
+2021-07-13 17:14:55: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:14:57: influx: module was loaded
+2021-07-13 17:14:57: Kalender: Modules was loaded
+2021-07-13 17:14:58: mqtt: Modules was loaded
+2021-07-13 17:14:58: ping: Modules was loaded
+2021-07-13 17:14:59: System: Modules was loaded
+2021-07-13 17:14:59: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:14:59: mongoose: Database connected
+2021-07-13 17:15:05: influx: module was loaded
+2021-07-13 17:15:05: Kalender: Modules was loaded
+2021-07-13 17:15:06: mqtt: Modules was loaded
+2021-07-13 17:15:06: ping: Modules was loaded
+2021-07-13 17:15:07: System: Modules was loaded
+2021-07-13 17:15:07: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:15:08: mongoose: Database connected
+2021-07-13 17:15:09: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:15:33: influx: module was loaded
+2021-07-13 17:15:33: Kalender: Modules was loaded
+2021-07-13 17:15:34: mqtt: Modules was loaded
+2021-07-13 17:15:34: ping: Modules was loaded
+2021-07-13 17:15:35: System: Modules was loaded
+2021-07-13 17:15:35: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:15:36: mongoose: Database connected
+2021-07-13 17:15:41: influx: module was loaded
+2021-07-13 17:15:41: Kalender: Modules was loaded
+2021-07-13 17:15:42: mqtt: Modules was loaded
+2021-07-13 17:15:42: ping: Modules was loaded
+2021-07-13 17:15:43: System: Modules was loaded
+2021-07-13 17:15:43: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:15:43: mongoose: Database connected
+2021-07-13 17:15:45: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:16:04: influx: module was loaded
+2021-07-13 17:16:04: Kalender: Modules was loaded
+2021-07-13 17:16:05: mqtt: Modules was loaded
+2021-07-13 17:16:05: ping: Modules was loaded
+2021-07-13 17:16:06: System: Modules was loaded
+2021-07-13 17:16:06: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:16:06: mongoose: Database connected
+2021-07-13 17:16:08: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:16:46: influx: module was loaded
+2021-07-13 17:16:46: Kalender: Modules was loaded
+2021-07-13 17:16:47: mqtt: Modules was loaded
+2021-07-13 17:16:47: ping: Modules was loaded
+2021-07-13 17:16:48: System: Modules was loaded
+2021-07-13 17:16:48: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:16:48: mongoose: Database connected
+2021-07-13 17:16:50: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:17:15: influx: module was loaded
+2021-07-13 17:17:15: Kalender: Modules was loaded
+2021-07-13 17:17:15: mqtt: Modules was loaded
+2021-07-13 17:17:15: ping: Modules was loaded
+2021-07-13 17:17:16: System: Modules was loaded
+2021-07-13 17:17:16: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:17:17: mongoose: Database connected
+2021-07-13 17:17:18: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:17:37: influx: module was loaded
+2021-07-13 17:17:37: Kalender: Modules was loaded
+2021-07-13 17:17:38: mqtt: Modules was loaded
+2021-07-13 17:17:38: ping: Modules was loaded
+2021-07-13 17:17:39: System: Modules was loaded
+2021-07-13 17:17:39: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:17:39: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:18:25: influx: module was loaded
+2021-07-13 17:18:25: Kalender: Modules was loaded
+2021-07-13 17:18:26: mqtt: Modules was loaded
+2021-07-13 17:18:26: ping: Modules was loaded
+2021-07-13 17:18:27: System: Modules was loaded
+2021-07-13 17:18:27: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:18:28: mongoose: Database connected
+2021-07-13 17:18:34: influx: module was loaded
+2021-07-13 17:18:34: Kalender: Modules was loaded
+2021-07-13 17:18:35: mqtt: Modules was loaded
+2021-07-13 17:18:35: ping: Modules was loaded
+2021-07-13 17:18:36: System: Modules was loaded
+2021-07-13 17:18:36: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:18:36: mongoose: Database connected
+2021-07-13 17:18:38: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:1 light:undefined) gespeichert.
+2021-07-13 17:18:46: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:null light:undefined) gespeichert.
+2021-07-13 17:22:37: influx: module was loaded
+2021-07-13 17:22:37: Kalender: Modules was loaded
+2021-07-13 17:22:37: mqtt: Modules was loaded
+2021-07-13 17:22:37: ping: Modules was loaded
+2021-07-13 17:22:38: System: Modules was loaded
+2021-07-13 17:22:38: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:22:39: mongoose: Database connected
+2021-07-13 17:23:28: influx: module was loaded
+2021-07-13 17:23:28: Kalender: Modules was loaded
+2021-07-13 17:23:29: mqtt: Modules was loaded
+2021-07-13 17:23:29: ping: Modules was loaded
+2021-07-13 17:23:30: System: Modules was loaded
+2021-07-13 17:23:30: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:23:30: mongoose: Database connected
+2021-07-13 17:24:28: influx: module was loaded
+2021-07-13 17:24:28: Kalender: Modules was loaded
+2021-07-13 17:24:29: mqtt: Modules was loaded
+2021-07-13 17:24:29: ping: Modules was loaded
+2021-07-13 17:24:30: System: Modules was loaded
+2021-07-13 17:24:30: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:24:30: mongoose: Database connected
+2021-07-13 17:24:38: influx: module was loaded
+2021-07-13 17:24:38: Kalender: Modules was loaded
+2021-07-13 17:24:39: mqtt: Modules was loaded
+2021-07-13 17:24:39: ping: Modules was loaded
+2021-07-13 17:24:40: System: Modules was loaded
+2021-07-13 17:24:41: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:24:41: mongoose: Database connected
+2021-07-13 17:24:57: influx: module was loaded
+2021-07-13 17:24:57: Kalender: Modules was loaded
+2021-07-13 17:24:58: mqtt: Modules was loaded
+2021-07-13 17:24:58: ping: Modules was loaded
+2021-07-13 17:24:59: System: Modules was loaded
+2021-07-13 17:24:59: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:24:59: mongoose: Database connected
+2021-07-13 17:25:25: influx: module was loaded
+2021-07-13 17:25:25: Kalender: Modules was loaded
+2021-07-13 17:25:25: mqtt: Modules was loaded
+2021-07-13 17:25:25: ping: Modules was loaded
+2021-07-13 17:25:26: System: Modules was loaded
+2021-07-13 17:25:27: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:25:27: mongoose: Database connected
+2021-07-13 17:25:56: influx: module was loaded
+2021-07-13 17:25:56: Kalender: Modules was loaded
+2021-07-13 17:25:56: mqtt: Modules was loaded
+2021-07-13 17:25:56: ping: Modules was loaded
+2021-07-13 17:25:57: System: Modules was loaded
+2021-07-13 17:25:58: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:25:58: mongoose: Database connected
+2021-07-13 17:26:00: influx: Neue Sensordaten für testroom123 (temp:1 hum:1 press:null light:null) gespeichert.
+2021-07-13 17:34:06: influx: module was loaded
+2021-07-13 17:34:06: Kalender: Modules was loaded
+2021-07-13 17:34:07: mqtt: Modules was loaded
+2021-07-13 17:34:07: ping: Modules was loaded
+2021-07-13 17:34:08: System: Modules was loaded
+2021-07-13 17:34:08: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:34:08: mongoose: Database connected
+2021-07-13 17:34:21: influx: Neue Sensordaten für Testroom (temp:29.50 hum:62.50 press:null light:null) gespeichert.
+2021-07-13 17:35:07: influx: module was loaded
+2021-07-13 17:35:07: Kalender: Modules was loaded
+2021-07-13 17:35:07: mqtt: Modules was loaded
+2021-07-13 17:35:07: ping: Modules was loaded
+2021-07-13 17:35:08: System: Modules was loaded
+2021-07-13 17:35:08: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:35:09: mongoose: Database connected
+2021-07-13 17:35:15: influx: Neue Sensordaten für Testroom (temp:29.50 hum:58.50 press:null light:null) gespeichert.
+2021-07-13 17:35:48: influx: module was loaded
+2021-07-13 17:35:48: Kalender: Modules was loaded
+2021-07-13 17:35:48: mqtt: Modules was loaded
+2021-07-13 17:35:48: ping: Modules was loaded
+2021-07-13 17:35:49: System: Modules was loaded
+2021-07-13 17:35:49: mqtt: Die Verbindung wurde hergestellt.
+2021-07-13 17:35:50: mongoose: Database connected
+2021-07-13 17:35:57: influx: Neue Sensordaten für Testroom (temp:29.60 hum:58.40 press:null light:null) gespeichert.

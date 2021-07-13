@@ -7,12 +7,12 @@ const socket = require("../modules/socket/socket");
  * @api {POST} /notification/ Nachricht versenden
  * @apiName Pushover-Nachricht versenden
  * @apiGroup Notification
- * @apiParam {JSON} payloader Legt den Payloader fest (pushover, mqtt)
+ * @apiParam {JSON} handler Legt den Payloader fest (pushover, mqtt)
  * @apiParam {JSON} title Titel
  * @apiParam {JSON} msg Message
  * @apiParamExample {json} Request-Example:
  * { 
- *  "payloader": "Pushover",
+ *  "handler": "Pushover",
  *  "title": "Hello Titel",
  *  "msg": "Hello World"
  * }

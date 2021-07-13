@@ -14,33 +14,37 @@ const log = require('../modules/log/log')("Sensor")
  * @apiParam {JSON} pressure Luftdruckwert
  * @apiSuccess {String} 200 New value was saved.
  * @apiParamExample {json} Request-Example:
- * { 
- *  "room":"Wohnzimmer",
- *  "sensortype":"h7t",
- *  "temperature":"25,5",
- *  "humidity":"46",
- *  "pressure":"994.2", 
- *  "lightlevel":"1250", 
+ * {
+ *   room: 'Wohnzimmer',
+ *   sensortype: 'room_climate',
+ *   battery: null,
+ *   temperature: '1',
+ *   humidity: '1',
+ *   pressure: '1'
  * }
  */
 
-router.post("/new/:room", async (req, res) => {
+
+
+router.post("/new", async (req, res) => {
+  console.log(req.body)
   const sensor = {
-    room: req.params.room,
+    room: req.body.room,
     sensortype: req.body.sensortype || null,
+    battery: req.body.battery || null,
     temperature: req.body.temperature || null,
     humidity: req.body.humidity || null,
     pressure: req.body.pressure || null,
-    lightlevel: req.body.lightlevel || null,
+    lightlevel: req.body.lightlevel || null
   };
   try {
-    modules.influx.influxRoomsensorWrite(sensor)
+    modules.influx.influxRoomsensorWrite(sensor);
     res.status(200).send("New value was saved");
     modules.mqtt.sendMsg(
-      `jarvis/modules/sensor/${req.params.room}/data`,
-      `{"room": "${req.params.room}","battery": "${req.body.battery}","sensortype": "${req.body.sensortype}","temperature": "${req.body.temperature}","humidity": "${req.body.humidity}", "pressure": "${req.body.pressure}","lightlevel": "${req.body.lightlevel}"}`);
+      `jarvis/modules/sensor/${sensor.room}/data`,
+      `{"room": "${sensor.room}","battery": "${req.body.battery}","sensortype": "${req.body.sensortype}","temperature": "${req.body.temperature}","humidity": "${req.body.humidity}", "pressure": "${req.body.pressure}","lightlevel": "${req.body.lightlevel}"}`);
   } catch (err) {
-    log.error(err);
+    console.error(err);
     res.status(400).send(err);
   }
 });
@@ -95,7 +99,7 @@ router.delete("/delete/:id", async (req, res) => {
       log.warn(
         `Folgender Eintrag ${posts} wurde von ${host} gelöscht`
       );
-      res.json(`Es wurde folgender Eintrag wurde gelöscht ${posts} `);
+      res.json(`Ein Eintrag wurde gelöscht ${posts} `);
     } else {
       res.status(404).send("Keinen Eintrag gefunden");
     }
