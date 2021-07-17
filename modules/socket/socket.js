@@ -79,9 +79,13 @@ async function getChannels() {
   let savedChannels = Channel.find({ enable: true }, function (err, channels) {
     youtubeHandler.emit('channels', channels);
   });
-
 }
 
+async function getConfig() {
+  let savedChannels = Channel.find({ enable: true }, function (err, channels) {
+    youtubeHandler.emit('config', channels);
+  });
 
+}
 setInterval(getChannels, 900000); // 900000ms = 15 min
 module.exports = { channelSubscribe, channelUnsubscribe };
