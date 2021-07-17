@@ -16,7 +16,7 @@ const system = require("./system/system");
 // const telegram = require("./telegram/telegram");
 const toast = require("./toast/toast");
 // const wetter = require("./wetter/wetter");
- const youtube = require("./youtube/youtube");
+const youtube = require("./youtube/youtube");
 
 module.exports = {
   // daily,
@@ -37,5 +37,5 @@ module.exports = {
   // telegram,
   toast,
   // wetter,
-   youtube,
+  youtube,
 };

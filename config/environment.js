@@ -1,5 +1,5 @@
 const config = {
-    debug: false,
+    debug: true,
     port: "3000",
     version: "0.7.1"
 }

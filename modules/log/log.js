@@ -78,28 +78,25 @@ module.exports = function (fileName) {
   var myLogger = {
     error: function (errMsg) {
       let text = JSON.stringify(errMsg);
-      logger.error(fileName + ': ' + text);
-      pushover.sendErr(fileName, "Beep Beep, error Boop");
+      logger.error(fileName + ': ' + text.substr(1, text.length - 2));
+      pushover.sendErr(fileName, text.substr(1, text.length - 2));
     },
     info: function (log) {
       let text = JSON.stringify(log);
-      logger.info(fileName + ': ' + text)
+      logger.info(fileName + ': ' + text.substr(1, text.length - 2))
     },
     debug: function (log) {
-      if (env.config.debug) {
-        let text = JSON.stringify(log);
-        logger.debug(fileName + ': ' + text)
-      } else {
-        return
-      }
+      if (!env.config.debug) { return }
+      let text = JSON.stringify(log);
+      logger.debug(fileName + ': ' + text.substr(1, text.length - 2))
     },
     warn: function (log) {
       let text = JSON.stringify(log);
-      logger.warn(fileName + ': ' + text)
+      logger.warn(fileName + ': ' + text.substr(1, text.length - 2))
     },
     data: function (log) {
       let text = JSON.stringify(log);
-      logger.data(fileName + ': ' + text)
+      logger.data(fileName + ': ' + text.substr(1, text.length - 2))
     }
   }
   return myLogger

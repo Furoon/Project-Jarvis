@@ -25,7 +25,7 @@ const influx = new Influx.InfluxDB({
 async function influxRoomsensorWrite(data) {
     influx.writePoints([{
         measurement: "roomsensors",
-        tags: { room: data.room},
+        tags: { room: data.room },
         fields: {
             temperature: data.temperature,
             humidity: data.humidity,
@@ -33,10 +33,8 @@ async function influxRoomsensorWrite(data) {
             pressure: data.pressure
         },
     },])
-    .then(log.data(`Neue Sensordaten für ${data.room} (temp:${data.temperature} hum:${data.humidity} press:${data.pressure} light:${data.lightlevel}) gespeichert.`))
-    .catch((err) => {
-        log.error(err.stack);
-    });
+        .then(log.data(`Neue Sensordaten für ${data.room} (temp:${data.temperature} hum:${data.humidity} press:${data.pressure} light:${data.lightlevel}) gespeichert.`))
+        .catch((err) => { log.error(err.stack) });
 };
 
 //INFO - Sensordaten abrufen
@@ -53,12 +51,13 @@ async function queryByRoom(room, limit) {
 //INFO - Neue Datenbank erstellen
 async function createDB(newDB) {
     influx.getDatabaseNames().then((names) => {
-    if (!names.includes(newDB)) {
-        log.info("Neue Datenbank wird erstellt")
-        return influx.createDatabase(newDB);
-    }
-    log.info("Datenbank bereits vorhanden")
-})};
+        if (!names.includes(newDB)) {
+            log.info("Neue Datenbank wird erstellt")
+            return influx.createDatabase(newDB);
+        }
+        log.info("Datenbank bereits vorhanden")
+    })
+};
 
 
 //TODO - Sensordaten finden und löschen
@@ -86,5 +85,5 @@ const influx_system = new Influx.InfluxDB({
 
 
 
-module.exports = { influxRoomsensorWrite,  queryByRoom, createDB };
+module.exports = { influxRoomsensorWrite, queryByRoom, createDB };
 log.debug("module was loaded");

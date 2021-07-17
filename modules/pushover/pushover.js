@@ -16,14 +16,8 @@ var fam = new Push({
 
 
 /**
- * An critical informationpush with an high priotity
- * @typedef {string} title
- * @typedef {string} message
- */
-/**
- * Set title and message
- * @param  {title} title - The title for the Push, leave blank for default value "Jarvis"
- * @param  {message} message - The message for the Push
+ * @param {string} title The title for the pushmessage
+ * @param {string} message The message for the pushmessage
  */
 
 const sendCritical = function (title, message) {
@@ -38,17 +32,12 @@ const sendCritical = function (title, message) {
     timestamp: new Date(),
   };
   jarvis.send(msg);
+  log.debug(`ErrorPush verschickt`);
 };
 
 /**
- * An noncritical informationpush
- * @typedef {string} title
- * @typedef {string} message
- */
-/**
- * Set title and message
- * @param  {title} title - The title for the Push, leave blank for default value "Jarvis"
- * @param  {message} message - The message for the Push
+ * @param {string} title The title for the pushmessage
+ * @param {string} message The message for the pushmessage
  */
 const sendNonCritial = function (title, message) {
   var msg = {
@@ -59,9 +48,13 @@ const sendNonCritial = function (title, message) {
     timestamp: new Date(),
   };
   jarvis.send(msg);
+  log.debug(`Push verschickt`);
 };
 
-
+/**
+ * @param {string} title The title for the pushmessage
+ * @param {string} message The message for the pushmessage
+ */
 const sendMsgFamily = function (title, message) {
   var msg = {
     message: message,
@@ -71,17 +64,13 @@ const sendMsgFamily = function (title, message) {
     timestamp: new Date(),
   };
   fam.send(msg);
+  log.debug(`Push verschickt`);
 };
 
 /**
- * A number, or a string containing a number.
- * @typedef {string} title
- * @typedef {string} message
- */
-/**
  * Set title and message
- * @param  {title} title - The title for the Push, leave blank for default value "Jarvis"
- * @param  {message} message - The message for the Push
+ * @param  {string} title The title for the Push, leave blank for default value "Jarvis"
+ * @param  {string} message The message for the Push
  */
 const sendMsg = function (title, message) {
   var msg = {
@@ -92,17 +81,14 @@ const sendMsg = function (title, message) {
     timestamp: new Date(),
   };
   jarvis.send(msg);
+  log.debug(`Push verschickt`);
 };
 
-/**
- * An errorpush with an high priority
- * @typedef {string} title
- * @typedef {string} message
- */
+
 /**
  * Set title and message
- * @param  {title} title - The title for the Push, leave blank for default value "Jarvis"
- * @param  {message} message - The message for the Push
+ * @param  {title} title The title for the Push, leave blank for default value "Jarvis"
+ * @param  {message} message The message for the Push
  */
 const sendErr = function (title, message) {
   var msg = {
@@ -112,11 +98,7 @@ const sendErr = function (title, message) {
     priority: -1,
     timestamp: new Date(),
   };
-  if (env.config.debug) {
-    return
-  } else {
-    jarvis.send(msg);
-  }
+  if (!env.config.debug) { jarvis.send(msg) }
 
 };
 
@@ -129,3 +111,5 @@ module.exports = {
   sendNonCritial,
   sendErr
 };
+
+

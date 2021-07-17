@@ -4,7 +4,6 @@ const app = express();
 const volleyball = require('volleyball');
 const modules = require("./modules/index");
 const log = require('./modules/log/log')("Jarvis")
-
 const env = require('./config/environment')
 
 //Import the Routes
@@ -15,10 +14,10 @@ const urlRoute = require("./routes/url");
 const systemRoute = require("./routes/system");
 const youtubeRoute = require("./routes/youtube");
 const notificationRoute = require("./routes/notification");
+const hostRoute = require('./routes/hosts');
 const testRoute = require("./routes/test");
 
 const port = env.config.port;
-const version = env.config.version;
 let name = `Jarvis v.${env.config.version}`;
 
 
@@ -42,6 +41,7 @@ app.use("/api/v1/sensor", sensorRoute);
 app.use("/api/v1/url", urlRoute);
 app.use("/api/v1/youtube", youtubeRoute);
 app.use("/api/v1/notification", notificationRoute);
+app.use("/api/v1/host", hostRoute);
 app.use("/api/v1/test", testRoute);
 
 app.listen(port, () => {

@@ -12,7 +12,7 @@ const log = require('../modules/log/log')("Sensor")
  * @apiParam {JSON} temperature Temperaturwert
  * @apiParam {JSON} humidity Luftfeuchtigkeitswert
  * @apiParam {JSON} pressure Luftdruckwert
- * @apiSuccess {String} 200 New value was saved.
+ * @apiSuccess {string} 200 New value was saved.
  * @apiParamExample {json} Request-Example:
  * {
  *   room: 'Wohnzimmer',
