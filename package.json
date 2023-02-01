@@ -20,7 +20,7 @@
     "googleapis": "^66.0.0",
     "influx": "^5.6.3",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.6.7",
+    "mongoose": "^5.13.15",
     "mongoose-float": "^1.0.4",
     "mqtt": "^4.2.1",
     "node-notifier": "^9.0.1",
